@@ -1,0 +1,188 @@
+html,
+body {
+    font-family: "Titillium Web", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: #d9dcec;
+    font-size: 14px;
+    
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+[class*="__container"] {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* -----------------HEADER-------------------- */
+.header {
+    padding: 50px 0;
+}
+.header__container {
+}
+._container {
+}
+.header__page {
+    display: flex;
+    justify-content: space-between;
+}
+.page {
+}
+.page__title-image {
+    display: flex;
+    align-items: center;
+}
+.page__img {
+}
+.page__title-logo {
+    text-align: center;
+    padding: 0 50px;
+    color: #133676;
+    font-weight: 600;
+    font-size: 25px;
+}
+.main__page {
+}
+.page__conatiner {
+}
+.page__menu {
+}
+.menu {
+}
+.menu__nav {
+}
+.menu__list {
+    text-align: center;
+}
+.meni__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.menu__link {
+    font-size: 30px;
+    font-weight: 500;
+    color: #d9dcec;
+    min-height: 50px;
+    padding: 15px;
+    background: #133676;
+    border-radius: 15px;
+    display: inline-block;
+    min-width: 350px;
+}
+.menu__link:hover {
+    background: #1f4b9b;
+}
+/* ------------------PAGE1--------------------- */
+.main__page1 {
+}
+.page1__container {
+}
+.page1__title-logo {
+    color: #133676;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+}
+.page1__title {
+    margin-bottom: 5px;
+    color: #133676;
+    font-size: 24px;
+    font-weight: 500;
+}
+.page1__title-text {
+    color: #133676;
+    font-size: 18px;
+    font-weight: 500;
+}
+.page1__links {
+    color: #133676;
+}
+.page1__links:hover {
+    text-decoration: underline;
+    color: #1d4da5;
+}
+/* --------------------------PAGE3------------------------ */
+.main__page3 {
+}
+.page3__container {
+}
+.page3__title-link {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    min-height: 50px;
+    padding: 15px;
+    background: #133676;
+    border-radius: 15px;
+    min-width: 350px;
+}
+.page3__links {
+    color: #d9dcec;
+}
+.page3__title-link:hover {
+    background: #1f4b9b;
+}
+/* ----------------PAGE!---------------- */
+.page2__main {
+}
+.page2__container {
+    padding: 20px ;
+}
+.page2__title-logo {
+    margin-bottom: 20px;
+    color: #133676;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+}
+.page2__title {
+    margin-bottom: 20px;
+    color: #133676;
+    text-align: center;
+    font-size: 38px;
+}
+.page2__title-text {
+    padding: 0 120px;
+    color: #133676;
+    font-size: 22px;
+}
+.page2__image {
+    text-align: center;
+}
+.page2__iamge {
+}
+/* ----------------PAGE4--------------- */
+.page3__main{
+}
+.page3__container {
+    padding: 0 20px;
+}
+.page3__title-logo {
+    color: #133676;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.page3__title-link {
+    box-shadow: 10px 5px 5px #133676;
+}	
+.page3__titl-text {
+    color: #133676;
+    font-size: 22px;
+}
+.page3__image {
+    text-align: center;
+}
+.page3__title-logo {
+    margin-bottom: 30px;
+    color: #133676;
+    font-size: 42px;
+    font-weight: 500;
+}
+.page3__title-text {
+    color: #133676;
+    font-size: 22px;
+}
