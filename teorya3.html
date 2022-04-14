@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matimatics</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="page1__image">
+                    <a href="page2.html"><img src="assets/img/logo.png" alt="#"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main__teoria3">
+            <section class="teoria3__container">
+                <div class="teoria3__title-logo">
+                    Тема 1.3 Формулы и законы алгебры логики.
+                 </div>
+                 <div class="teoria3__title-text">
+                    то Так как таблицы истинности не совпали, то функции F3 и F4  не тождественны
+                 Эти формулы и законы предназначены для минимизации логических формул.
+                 Переместительный закон:
+                 X1VX2=X2VX1
+                 X1&X2=X2&X1
+                 Сочетательный закон:
+                 X1V(X2VX3)=(X1VX2)VX3
+                 X1&(X2&X3)=(X1&X2)&X3
+                 Распределительный закон:
+                 (X1VX2)&X3=(X1&X3)V(X2&X3)
+                 (X1&X2)VX3=(X1VX3)&(X2VX3)
+                 Закон инверсии:
+                 (X1VX2) ̅=(X1) ̅&(X2) ̅
+                 (X1&X2) ̅=(X1) ̅V(X2) ̅
+                 Соотношения:
+                 X1 ⊕X2=(X1~X2) ̅= ((X1) ̅V(X2) ̅)&(X1VX2)
+                 X1 ~X2=(X1⊕X2) ̅=((X1) ̅&(X2) ̅)V(X1VX2)
+                 ~ - Эквивалентность
+                 Формулы склеивания:
+                 X1&X2VX1&(X2) ̅=X1
+                 (X1VX2)&(X1V(X2) ̅)=X1
+     
+                 Формулы поглощения:
+                 X1&X2VX1=X1	(X1) ̅&X2VX1=X1VX2
+                 X1&(X2VX1)=X1	X1&(X2V(X1) ̅)=X1&X2
+                 X&X=X                        X&X&X=X	X&X ̅=0
+                 X&X=X                        XVXVX=X	XVX ̅=1
+                 X&0=0                               X ̿=X	XV0=X
+                 X&1=X	XV1=1
+     
+                 F1=X1&X2&X3VX1&X3VX1&X2=X1&(X2&X3VX3)VX1&X2=X1&X3VX1&X2=X1&(X3VX2)
+                 Чтобы проверить правильность минимизации необходимо составить таблицу истинности для исходной формулы и конечной.
+                  
+                 Если таблицы истинности совпали, то минимизация выполнена верно.
+                 Fнач=0&0&0V0&0V0&0=0V0V0=0	Fкон=0&0V0=0
+                 Fнач=0&0&1V0&1V0&0=0V0V0=0	Fкон=0&1V0=0
+                 Fнач=0&1&0V0&0V0&1=0V0V0=0	Fкон=0&0V1=0
+                 Fнач=0&1&1V0&1V0&1=0V0V0=0	Fкон=0&1V1=0
+                 Fнач=1&0&0V1&0V1&0=0V0V0=0	Fкон=1&0V0=0
+                 Fнач=1&0&1V1&1V1&0=0V1V0=1	Fкон=1&1V0=1
+                 Fнач=1&1&0V1&0V1&1=0V0V1=1	Fкон=1&0V1=1
+                 Fнач=1&1&1V1&1V1&1=1V1V1=1	Fкон=1&1V1=1
+                 <div class="teoria3__image">
+                     <img src="assets/img/img21.png" alt="#">
+                 </div>
+                 Так как таблицы истинности совпали, то минимизация верна.
+                 Чтобы определить целесообразность минимизации необходимо построить схемы для исходной формулы и для конечной. Если схема конечная меньше начальной (исходной), то минимизация целесообразна.
+                 F1=X1&X2&X3VX1&X3VX1&X2
+                 <div class="teoria3__image">
+                     <img src="assets/img/img22.png" alt="#">
+                 </div>
+                 Минимизация целесообразна, так как начальная логическая схема больше конечной логической схемы.
+                 F2=((X1) ̅&(X2) ̅ ) ̅VX1&X3=(X1VX2) ̿VX1&X3=X1VX2VX1&X3=X1VX2VX1&X3=X2V(X1&X3VX1) =X2VX1
+                 <div class="teoria3__image">
+                     <img src="assets/img/img23.png" alt="#">
+                 </div>
+                 Минимизация целесообразна, так как конечная логическая схема меньше начальной логической схемы.
+                 F3=(((X1) ̅&(X2) ̅ ) ̅VX1&X3VX3) ̿=((X1) ̅&(X2) ̅ ) ̅VX1&X3VX3=(X1VX2) ̿VX1&X3VX3=X1VX2V(X1&X3VX3)=X1VX2VX3
+                 <div class="teoria3__image">
+                     <img src="assets/img/img24.png" alt="#">
+                 </div>
+                 Fнач=((0 ̅&0 ̅ ) ̅V0&0V0) ̿=0
+                 F=((0 ̅&0 ̅ ) ̅V0&1V1) ̿=1
+                 F=((0 ̅&1 ̅ ) ̅V0&0V0) ̿=1
+                 F=((0 ̅&1 ̅ ) ̅V0&1V1) ̿=1
+                 F=((1 ̅&0 ̅ ) ̅V1&0V0) ̿=1
+                 F=((1 ̅&0 ̅ ) ̅V1&1V1) ̿=1
+                 F=((1 ̅&1 ̅ ) ̅V1&0V0) ̿=1
+                 F=((1 ̅&1 ̅ ) ̅V1&1V1) ̿=1
+                 Fконеч.=0V0V0=0
+                 F=0V0V1=1
+                 F=0V1V0=1
+                 F=0V1V1=1
+                 F=1V0V0=1
+                 F=1V0V1=1
+                 F=1V1V0=1
+                 F=1V1V1=1
+                 <div class="teoria3__image">
+                     <img src="assets/img/img25.png" alt="#">
+                 </div>
+                 Так как таблицы истинности совпали, то минимизация верна.
+                 F4=(X1) ̅&(X2) ̅&X3VX1&(X2) ̅&X3VX3=(X2) ̅&X3&((X1) ̅VX1)VX3=(X2) ̅&X3VX3
+                 F=0 ̅&0 ̅&0V0&0 ̅&0V0=0
+                 F=0 ̅&0 ̅&1V0&0 ̅&1V1=1
+                 F=0 ̅&1 ̅&0V0&1 ̅&0V0=0
+                 F=0 ̅&1 ̅&1V0&1 ̅&1V1=1
+                 F=1 ̅&0 ̅&0V1&0 ̅&0V0=0
+                 F=1 ̅&0 ̅&1V1&0 ̅&1V1=1
+                 F=1 ̅&1 ̅&0V1&1 ̅&0V0=0
+                 F=1 ̅&1 ̅&1V1&1 ̅&1V1=1
+                 F=0 ̅&0V0=0
+                 F=0 ̅&1V1=1
+                 F=1 ̅&0V0=0
+                 F=1 ̅&1V1=1
+                 F=0 ̅&0V0=0
+                 F=0 ̅&1V1=1
+                 F=1 ̅&0V0=0
+                 F=1 ̅&1V1=1
+                 <div class="teoria3__image">
+                     <img src="assets/img/img26.png" alt="#">
+                 </div>
+                 Минимизация верна, так как таблицы истинности совпали.
+                 <div class="teoria3__image">
+                     <img src="assets/img/img27.png" alt="#">
+                 </div>
+                 </div>
+                 <div class="teoria3__button">
+                    <a class="teoria3__btn" href="#">На вверх</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
