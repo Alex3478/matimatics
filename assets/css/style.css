@@ -218,7 +218,7 @@ body {
     box-shadow: 10px 5px 5px #133676;
 }	
 .page3__titl-text {
-    color: #133676;
+    color: #133676; 
     font-size: 22px;
 }
 .page3__image {
@@ -293,6 +293,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 45%;
+    z-index: 1;
 }
 .pages__img img {
     width: 100%;
@@ -320,9 +321,41 @@ h1 {
     border-radius: 15px;
     display: inline-block;
     min-width: 550px;
+    position: relative;
+    z-index: 100;
 }
 .pages__link:hover {
     background: #1f4b9b;
+}
+/* ------------------PAGES4---------------------- */
+.pages4__body {
+}
+.pages4__menu {
+}
+.menus {
+}
+.menus__nav {
+    text-align: center;
+    
+}
+.menus__list {
+}
+.menus__item {
+    padding: 10px 0;
+}
+.menus__link {
+    font-size: 30px;
+    font-weight: 500;
+    color: #d9dcec;
+    min-height: 50px;
+    padding: 5px;
+    background: #133676;
+    border-radius: 15px;
+    display: inline-block;
+    min-width: 400px;
+}
+.menus__link:hover {
+    background: #1b4aa0;
 }
 /* --------------------PAGE7--------------------- */
 .page7__title-logotips {
@@ -645,6 +678,13 @@ h1 {
     font-weight: 600;
     text-align: center;
 }
+.teoria7__title {
+    padding: 0 20px;
+    color: #133676;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
 .teoria7__image {
 }
 .teoria7__button {
@@ -663,7 +703,7 @@ h1 {
     border-radius: 15px;
     width: 180px;
     position: absolute;
-    bottom: -280px;
+    bottom: -400px;
     left: 0;
     margin: 0 0 15px 15px;
 }
