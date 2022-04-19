@@ -29,8 +29,6 @@ body {
     display: flex;
     align-items: center;
 }
-.page__img {
-}
 .page__title-logo {
     text-align: center;
     padding: 0 50px;
@@ -64,6 +62,7 @@ body {
     color: #D6D6D6;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
+    z-index: 10;
 }
 .menu__link:before {
     content: '';
@@ -166,8 +165,6 @@ body {
     height: 100%;
 }
 /* --------------------------PAGE3------------------------ */
-.main__page3 {
-}
 .page3__title-logo {
     color: #133676;
     text-align: center;
@@ -272,8 +269,6 @@ body {
     font-size: 42px;
     font-weight: 500;
     margin-bottom: 30px;
-}
-.page3__title-link {
 }	
 .page3__titl-text {
     color: #133676; 
@@ -314,10 +309,6 @@ body {
 .pages__title-image {
     display: flex;
     align-items: center;
-}
-.pages__img {
-}
-.pages__links {
 }
 .pages__title-text {
     color: #133676;
@@ -399,7 +390,6 @@ h1 {
 /* ------------------PAGES4---------------------- */
 .menus__nav {
     text-align: center;
-    
 }
 .menus__item {
     padding: 10px 0;
@@ -460,30 +450,29 @@ h1 {
     font-weight: 600;
     text-align: center;
 }
-/* -------------------TEORYA1------------------- */
-.teoria1__title-logo {
+/* -----------------------TEORIA----------------------- */
+.teoria__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
-    transform: translate(0px, -200px);
 }
-.teoria1__title {
+.teoria__title {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 32px;
     font-weight: 500;
 }
-.teoria1__title-text {
+.teoria__title-text {
     padding: 0 20px;
     color: #133676;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
 }
-.teoria1__btn {
+.teoria__btn {
     display: inline-block;
     color: #d9dcec;
     text-align: center;
@@ -501,216 +490,8 @@ h1 {
     left: 0;
     margin: 0 0 15px 15px;
 }
-/* ------------------TEORIA2------------------ */
-.teoria2__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    
-}
-.teoria2__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria2__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -3100px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ------------------TEORIA3------------------ */
-.teoria3__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    
-}
-.teoria3__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria3__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -2400px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ---------------TEORIA4------------------ */
-.teoria4__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-}
-.teoria4__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria4__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -1740px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ----------------TEORIA5----------------- */
-.teoria5__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-}
-.teoria5__title {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria5__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -1470px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ----------------TEORIA6----------------- */
-.teoria6__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-}
-.teoria6__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria6__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -2500px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* -----------------TEORIA7----------------- */
-.teoria7__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.teoria7__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria7__title {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.teoria7__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -400px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* --------------------PRACTIC1------------------------- */
-.practic1__title-logo {
+/* ---------------------PRACTIC---------------------- */
+.practic__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
@@ -723,9 +504,9 @@ h1 {
     color: #133676;
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
 }
-.practic12__btn {
+.practic__btn {
     display: inline-block;
     color: #d9dcec;
     text-align: center;
@@ -740,380 +521,6 @@ h1 {
     width: 180px;
     position: absolute;
     bottom: -1100px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ------------------PRACTIC2------------------ */
-.practic2__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic2__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic2__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -600px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* -----------------PRACTIC3--------------- */
-.practic3__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic3__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic3__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -900px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* -----------------PRACTIC4-------------------- */
-.practic4__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic4__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic4__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -610px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* -------------------PRACTIC5------------------- */
-.practic5__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic5__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic5__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -1400px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ---------------PRACTIC6--------------- */
-.practic6__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic6__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic6__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -450px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ------------------PRACTIC7----------------- */
-.practic7__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic7__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic7__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -1100px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ---------------PRACTIC8---------------- */
-.practic8__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic8__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic8__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -600px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* --------------------PRACTIC9----------------- */
-.practic9__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic9__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic9__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -500px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* --------------------PRACTIC10------------------- */
-.practic10__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic10__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic10__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -500px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ---------------------PRACTIC11---------------------- */
-.practic11__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic11__title-text {
-    padding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic11__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -1500px;
-    left: 0;
-    margin: 0 0 15px 15px;
-}
-/* ----------------PRACTIC12--------------- */
-.practic12__title-logo {
-    margin-bottom: 100px;
-    text-align: center;
-    color: #133676;
-    font-size: 42px;
-    font-weight: 500;
-    transform: translate(0px, -200px);
-}
-.practic12__title-text {
-    adding: 0 20px;
-    color: #133676;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-.practic12__btn {
-    display: inline-block;
-    color: #d9dcec;
-    text-align: center;
-    color: #d9dcec;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    height: 80px;
-    padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    width: 180px;
-    position: absolute;
-    bottom: -1300px;
     left: 0;
     margin: 0 0 15px 15px;
 }
