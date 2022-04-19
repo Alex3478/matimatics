@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Montserrat", "" , sans-serif;
     height: 100vh;
     width: 100%;
     background: #d9dcec;
@@ -21,15 +21,9 @@ body {
 .header {
     padding: 50px 0;
 }
-.header__container {
-}
-._container {
-}
 .header__page {
     display: flex;
     justify-content: space-between;
-}
-.page {
 }
 .page__title-image {
     display: flex;
@@ -44,16 +38,6 @@ body {
     font-weight: 600;
     font-size: 25px;
 }
-.main__page {
-}
-.page__conatiner {
-}
-.page__menu {
-}
-.menu {
-}
-.menu__nav {
-}
 .menu__list {
     text-align: center;
 }
@@ -61,29 +45,59 @@ body {
     margin-bottom: 40px;
 }
 .menu__link {
+    text-align: center;
     font-size: 30px;
     font-weight: 500;
     color: #d9dcec;
     min-height: 50px;
     padding: 15px;
     background: #133676;
-    border-radius: 15px;
     display: inline-block; 
     min-width: 350px;
+    position: relative;
+    padding: 20px 40px;
+    border: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color:#3F4A83;
+    color: #D6D6D6;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.menu__link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+.menu__link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
 }
 .menu__link:hover {
-    background: #1f4b9b;
+    color: #fff;
+}
+.menu__link:hover::before, .menu__link:hover::after {
+    width: 100%;
 }
 /* ------------------PAGE1--------------------- */
-.main__page1 {
-}
-.page1__container {
-}
 .page1__title-logo {
     color: #133676;
     text-align: center;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .page1__title {
     margin-bottom: 5px;
@@ -91,20 +105,23 @@ body {
     font-size: 24px;
     font-weight: 500;
 }
+.page1__body {
+    position: relative;
+    z-index: 10;
+}
 .page1__title-text {
-    color: #133676;
+    color: #164397;
     font-size: 18px;
     font-weight: 500;
 }
 .page1__links {
-    color: #133676;
+    color: #18479e;
+    position: relative;
+    z-index: 100;
 }
 .page1__links:hover {
     text-decoration: underline;
     color: #1d4da5;
-}
-.page1__button {
-
 }
 .page1__btn {
     display: inline-block;
@@ -124,37 +141,86 @@ body {
     left: 0;
     margin: 0 0 15px 15px;
 }
+.pagee__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 1;
+}
+.pagee__img img {
+    width: 100%;
+    height: 100%;
+}
+.page1__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 1;
+}
+.page1__img img {
+    width: 100%;
+    height: 100%;
+}
 /* --------------------------PAGE3------------------------ */
 .main__page3 {
 }
 .page3__title-logo {
-    display: flex;
-    align-items: center;
-}
-.page3__container {
+    color: #133676;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .page3__title-link {
     margin-bottom: 20px;
     font-size: 30px;
-    font-weight: 500;
-    min-height: 50px;
     padding: 15px;
-    background: #133676;
-    border-radius: 15px;
-    min-width: 350px;
 }
 .page3__links {
-    color: #d9dcec;
+    position: relative;
+    padding: 20px 40px;
+    border: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color:#3F4A83;
+    color: #D6D6D6;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.page3__links:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+.page3__links:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
 }
 .page3__title-link:hover {
-    background: #1f4b9b;
+    color: #fff;
+}
+.page3__links:hover::before, .page3__links:hover::after {
+    width: 100%;
 }
 /* ----------------PAGE!---------------- */
 .page2__main {
     padding: 0 30px ;
-}
-.page2__container {
-
 }
 .page2__title-logo {
     margin-bottom: 20px;
@@ -178,11 +244,6 @@ body {
 .page2__image {
     text-align: center;
 }
-.page2__iamge {
-}
-.page2__button {
-    
-}
 .page2__btn {
     display: inline-block;
     color: #d9dcec;
@@ -202,8 +263,6 @@ body {
     margin: 0 0 15px 15px;
 }
 /* ----------------PAGE4--------------- */
-.page3__main{
-}
 .page3__container {
     padding: 0 20px;
 }
@@ -215,7 +274,6 @@ body {
     margin-bottom: 30px;
 }
 .page3__title-link {
-    box-shadow: 10px 5px 5px #133676;
 }	
 .page3__titl-text {
     color: #133676; 
@@ -233,8 +291,6 @@ body {
 .page3__title-text {
     color: #133676;
     font-size: 22px;
-}
-.page3__button {
 }
 .page3__btn {
     display: inline-block;
@@ -255,14 +311,6 @@ body {
     margin: 0 0 15px 15px;
 }
 /* --------------PAGES------------------- */
-.header {
-}
-.header__container {
-}
-.header__pages {
-}
-.pages {
-}
 .pages__title-image {
     display: flex;
     align-items: center;
@@ -281,12 +329,6 @@ h1 {
     font-size: 38px;
     font-weight: 600;
 }
-.main__pages {
-}
-.pages__container {
-}
-.pages__image {
-}
 .pages__img {
     position: absolute;
     bottom: 0;
@@ -299,12 +341,6 @@ h1 {
     width: 100%;
     height: 100%;
 }
-.pages__title-menu {
-
-}
-.pages__nav {
-
-}
 .pages__list {
     text-align: center;
 }
@@ -312,33 +348,58 @@ h1 {
     margin-bottom: 40px;
 }
 .pages__link {
+    text-align: center;
     font-size: 30px;
     font-weight: 500;
     color: #d9dcec;
-    min-height: 50px;
+    min-height: 60px;
     padding: 5px;
     background: #133676;
-    border-radius: 15px;
     display: inline-block;
     min-width: 550px;
     position: relative;
     z-index: 100;
+    position: relative;
+    padding: 20px 40px;
+    border: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color:#3F4A83;
+    color: #D6D6D6;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.pages__link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out
+}
+.pages__link::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  transition: all 0.25s ease-in-out;
 }
 .pages__link:hover {
-    background: #1f4b9b;
+    color: #fff;;
+}
+.pages__link:hover::before, .pages__link:hover::after {
+  width: 100%;
 }
 /* ------------------PAGES4---------------------- */
-.pages4__body {
-}
-.pages4__menu {
-}
-.menus {
-}
 .menus__nav {
     text-align: center;
     
-}
-.menus__list {
 }
 .menus__item {
     padding: 10px 0;
@@ -364,8 +425,10 @@ h1 {
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -150px);
 }
-.main__page7 {
+.page7__body {
+    text-align: left;  
 }
 .page7__title-logo {
     margin-bottom: 30px;
@@ -382,14 +445,13 @@ h1 {
     text-align: left;
 }
 /* ---------------------PAGE6---------------------- */
-.main__page6 {
-}
 .page6__title-logo {
     margin-bottom: 30px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -150px);
 }
 .page6__title-text {
     padding: 0 20px;
@@ -399,22 +461,13 @@ h1 {
     text-align: center;
 }
 /* -------------------TEORYA1------------------- */
-.header__container {
-}
-._container {
-}
-.teoria1__image {
-}
-.main__teoria1 {
-}
-.teoria1__conatiner {
-}
 .teoria1__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .teoria1__title {
     margin-bottom: 100px;
@@ -429,10 +482,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria1__image {
-}
-.teoria1__button {
 }
 .teoria1__btn {
     display: inline-block;
@@ -453,16 +502,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ------------------TEORIA2------------------ */
-.main__teoria2 {
-}
-.teoria2 {
-}
 .teoria2__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    
 }
 .teoria2__title-text {
     padding: 0 20px;
@@ -470,10 +516,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria2__image {
-}
-.teoria2__button {
 }
 .teoria2__btn {
     display: inline-block;
@@ -494,16 +536,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ------------------TEORIA3------------------ */
-.main__teoria3 {
-}
-.teoria3__container {
-}
 .teoria3__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    
 }
 .teoria3__title-text {
     padding: 0 20px;
@@ -511,10 +550,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria3__image {
-}
-.teoria3__button {
 }
 .teoria3__btn {
     display: inline-block;
@@ -535,10 +570,6 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ---------------TEORIA4------------------ */
-.main__teoria4 {
-}
-.teoria4__container {
-}
 .teoria4__title-logo {
     margin-bottom: 100px;
     text-align: center;
@@ -552,12 +583,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria4__image {
-}
-.teoria4__iamge {
-}
-.teoria4__button {
 }
 .teoria4__btn {
     display: inline-block;
@@ -578,10 +603,6 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ----------------TEORIA5----------------- */
-.main__teoria5 {
-}
-.teoria5__container {
-}
 .teoria5__title-logo {
     margin-bottom: 100px;
     text-align: center;
@@ -595,10 +616,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria5__image {
-}
-.teoria5__button {
 }
 .teoria5__btn {
     display: inline-block;
@@ -619,10 +636,6 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ----------------TEORIA6----------------- */
-.main__teoria6 {
-}
-.teoria6__container {
-}
 .teoria6__title-logo {
     margin-bottom: 100px;
     text-align: center;
@@ -636,10 +649,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria6__image {
-}
-.teoria6__button {
 }
 .teoria6__btn {
     display: inline-block;
@@ -660,16 +669,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* -----------------TEORIA7----------------- */
-.main__teoria7 {
-}
-.teoria7__container {
-}
 .teoria7__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .teoria7__title-text {
     padding: 0 20px;
@@ -684,10 +690,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.teoria7__image {
-}
-.teoria7__button {
 }
 .teoria7__btn {
     display: inline-block;
@@ -708,16 +710,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* --------------------PRACTIC1------------------------- */
-.main__practic1 {
-}
-.practic1__container {
-}
 .practic1__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic__title-text {
     padding: 0 20px;
@@ -725,10 +724,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic1__image {
-}
-.practic12__button {
 }
 .practic12__btn {
     display: inline-block;
@@ -749,16 +744,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ------------------PRACTIC2------------------ */
-.main__practic2 {
-}
-.practic2__container {
-}
 .practic2__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic2__title-text {
     padding: 0 20px;
@@ -766,10 +758,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic2__image {
-}
-.practic2__button {
 }
 .practic2__btn {
     display: inline-block;
@@ -790,16 +778,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* -----------------PRACTIC3--------------- */
-.main__practic3 {
-}
-.practic3__container {
-}
 .practic3__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic3__title-text {
     padding: 0 20px;
@@ -807,10 +792,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic3__image {
-}
-.practic3__button {
 }
 .practic3__btn {
     display: inline-block;
@@ -831,16 +812,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* -----------------PRACTIC4-------------------- */
-.main__practic4 {
-}
-.practic4__container {
-}
 .practic4__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic4__title-text {
     padding: 0 20px;
@@ -848,10 +826,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic4__image {
-}
-.practic4__button {
 }
 .practic4__btn {
     display: inline-block;
@@ -872,16 +846,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* -------------------PRACTIC5------------------- */
-.main__practic5 {
-}
-.practic5__container {
-}
 .practic5__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic5__title-text {
     padding: 0 20px;
@@ -889,10 +860,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic5__image {
-}
-.practic5__button {
 }
 .practic5__btn {
     display: inline-block;
@@ -913,16 +880,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ---------------PRACTIC6--------------- */
-.main__practic6 {
-}
-.practic6__container {
-}
 .practic6__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic6__title-text {
     padding: 0 20px;
@@ -930,10 +894,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic6__image {
-}
-.practic6__button {
 }
 .practic6__btn {
     display: inline-block;
@@ -954,16 +914,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ------------------PRACTIC7----------------- */
-.main__practic7 {
-}
-.practic7__container {
-}
 .practic7__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic7__title-text {
     padding: 0 20px;
@@ -971,10 +928,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic7__image {
-}
-.practic7__button {
 }
 .practic7__btn {
     display: inline-block;
@@ -995,16 +948,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ---------------PRACTIC8---------------- */
-.main__practic8 {
-}
-.practic8__container {
-}
 .practic8__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic8__title-text {
     padding: 0 20px;
@@ -1012,10 +962,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic8__image {
-}
-.practic8__button {
 }
 .practic8__btn {
     display: inline-block;
@@ -1036,16 +982,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* --------------------PRACTIC9----------------- */
-.main__practic9 {
-}
-.practic9__container {
-}
 .practic9__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic9__title-text {
     padding: 0 20px;
@@ -1053,10 +996,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic9__image {
-}
-.practic9__button {
 }
 .practic9__btn {
     display: inline-block;
@@ -1077,16 +1016,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* --------------------PRACTIC10------------------- */
-.main__practic10 {
-}
-.practic10__container {
-}
 .practic10__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic10__title-text {
     padding: 0 20px;
@@ -1094,8 +1030,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic10__button {
 }
 .practic10__btn {
     display: inline-block;
@@ -1116,16 +1050,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ---------------------PRACTIC11---------------------- */
-.main__practic11 {
-}
-.practic11__container {
-}
 .practic11__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic11__title-text {
     padding: 0 20px;
@@ -1133,10 +1064,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic11__image {
-}
-.practic11__button {
 }
 .practic11__btn {
     display: inline-block;
@@ -1157,16 +1084,13 @@ h1 {
     margin: 0 0 15px 15px;
 }
 /* ----------------PRACTIC12--------------- */
-.main__practic12 {
-}
-.practic12__container {
-}
 .practic12__title-logo {
     margin-bottom: 100px;
     text-align: center;
     color: #133676;
     font-size: 42px;
     font-weight: 500;
+    transform: translate(0px, -200px);
 }
 .practic12__title-text {
     adding: 0 20px;
@@ -1174,10 +1098,6 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-}
-.practic12__image {
-}
-.practic12__button {
 }
 .practic12__btn {
     display: inline-block;
