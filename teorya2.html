@@ -48,11 +48,11 @@
                       Пример: по логической формуле построить логическую схему. <br>
                       F=((X1) ̅&(X3) ̅ ) ̅VX1&(X2) ̅&X3VX1&X2
                       <div class="teoria__image">
-                          <img src="assets/img/img9.png" alt="#">
+                          <img src="assets/img/img99.png" alt="#">
                       </div>
                       F=X1&X2&X3VX1&X3VX2&X3
                       <div class="teoria__image">
-                          <img src="assets/img/img10.png" alt="#">
+                          <img src="assets/img/img101.png" alt="#">
                       </div>
                       <div class="teoria__main-title main-title">
                         <h2 class="main-title__title" data-numb="2">Переход от логической схемы к логической формуле.</h2>
@@ -65,15 +65,15 @@
                       4. Каждая «колбаска» содержит ту функцию, которая внутри элемента. <br>
                       5. Не забыть расставить инверсии.
                       <div class="teoria__image">
-                          <img src="assets/img/img11.png" alt="#">
+                          <img src="assets/img/img111.png" alt="#">
                       </div>
                       F=(X1&X2) ̅V (X2) ̅&(X3) ̅
                       <div class="teoria__image">
-                          <img src="assets/img/img12.png" alt="#">
+                          <img src="assets/img/img112.png" alt="#">
                       </div>
                       F=(X1) ̅&X2VX2VX1&(X2) ̅
                       <div class="teoria__image">
-                          <img src="assets/img/img13.png" alt="#">
+                          <img src="assets/img/img113.png" alt="#">
                       </div>
                       F=((X1) ̅&(X2) ̅  V(X1&(X2) ̅ ) ̅  &(X1VX2) ̅ ) <br>
                       <div class="teoria__main-title main-title">
@@ -109,19 +109,34 @@
                       3.Так как СДНФ стремится к единице, то необходимо избавиться от нулей, с помощью инверсии. Если в данной строке таблицы истинности аргумент равен нулю, то в формуле над этим аргументом ставим инверсию, а если равен единице, то не ставим.
                       <table>
                         <tr>
-                            <th>X1</th>
-                            <th>X2</th>
-                            <th>X3</th>
-                            <th>F1</th>
-                            <th>F2</th>
-                            <th>F3</th>
-                            <th>F4</th>
+                         <th>&nbsp;</th><th>X1</th><th>X2</th><th>X3</th><th>F1</th><th>F2</th><th>F3</th>
                         </tr>
+                        <tr>
+                         <td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td>
+                        </tr>
+                        <tr>
+                         <td></td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td>
+                        </tr>
+                        <tr>
+                         <td></td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td>
+                        <tr>
+                         <td></td><td>1V</td><td>1V</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                        </tr> 
+                        <tr>
+                         <td></td><td>0</td><td>1V</td><td>1V</td><td>0</td><td>1V</td><td>1V</td>
+                        </tr>
+                        <tr>
+                         <td></td><td>1V</td><td></td><td></td>
+                        </tr>                        
+                        </tr>
+                       </table>
+                      <table>
                         <tr>
                             <td>0</td>
                             <td>0</td>
                             <td>0</td>
                             <td>0</td>
+                            <td>1</td>
                             <td>1</td>
                             <td>1</td>
                         </tr>

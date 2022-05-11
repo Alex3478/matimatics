@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>matimatics</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="page1__image">
+                    <a href="teorya6.html"><img src="assets/img/logo.png" alt="#"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main__teoria">
+            <section class="teoria__container">
+                <div class="teoria__title-logo">
+                     Графы. Общие сведения.
+                 </div>
+                
+                 <div class="teoria__main-title main-title">
+                    <h2 class="main-title__title" data-numb="3">Маршруты, цепи и циклы.</h2>
+                </div>
+                <div class="teoria__title">
+                Маршрутом называется чередующаяся последовательность вершин и ребер графа: <br>
+                                                     v1,x1,v2,x2,v3,...,xk,vk+1
+                 в которой любые два соседних элемента инцидентны.
+                 Для обычного неориентированного графа достаточно указать в маршруте только последовательность ребер или вершин, т.к. там нет петель.
+                 Если v1 и vk+1 совпадают, то маршрут замкнут. Иначе маршрут называется открытым. 
+                 Цепью называется маршрут, в котором все ребра различны. Если в цепи также различны и вершины, то такая цепь называется простой.
+                 Замкнутая цепь, называется циклом. Цикл, в котором все вершины, кроме первой и последней, попарно различны, называется простым циклом. Граф без циклов называется ациклическим.
+                 Пример: 
+                 <div class="teoria__image">
+                     <img src="assets/img/img38.png" alt="#">
+                 </div>
+                 1.v1,v3,v1,v4 – маршрут, но не цепь. <br>
+                 2. v1,v3,v5,v2,v3,v4 – цепь, но не простая цепь. <br>
+                 3. v1,v4,v3,v2,v5 – простая цепь. <br>
+                 4. v1,v3,v5,v2,v3,v4,v1 – цикл, но не простой цикл. <br>
+                 5 v1,v3,v4,v1 –простой цикл <br>
+                </div>
+                 

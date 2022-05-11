@@ -23,7 +23,7 @@ body {
     justify-content: center;
     margin: 10px 0;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .main-title__title {
     position: relative;
@@ -55,8 +55,8 @@ body {
     text-align: center;
     padding: 0 50px;
     color: #133676;
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 30px;
 }
 .menu__list {
     text-align: center;
@@ -110,15 +110,15 @@ body {
 .page1__title-logo {
     color: #133676;
     text-align: center;
-    font-size: 42px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     transform: translate(0px, -200px);
 }
 .page1__title {
     margin-bottom: 5px;
     color: #133676;
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     padding: 10px 100px;
 }
 .page1__body {
@@ -129,7 +129,7 @@ body {
     text-align: left;
     color: #164397;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 28px;
 }
 .page1__links {
@@ -150,7 +150,7 @@ body {
     color: #d9dcec;
     margin-bottom: 20px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     height: 80px;
     padding: 15px;
     background: #133676;
@@ -280,12 +280,12 @@ body {
 .pages__title-text {
     color: #133676;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
 }
 h1 {
     font-size: 38px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .pages__img {
     position: absolute;
@@ -417,7 +417,7 @@ h1 {
     text-align: center;
     color: #133676;
     font-size: 42px;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     bottom: 250px ;
     left:0;
@@ -425,7 +425,7 @@ h1 {
 .teoria__title-text {
     color: #133676;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
 }
 .teoria__btn {
@@ -455,16 +455,75 @@ h1 {
     z-index: 100;
     line-height: 1.6;
 }
+.teoria__title {
+    font-size: 21px;
+    color: #133676;
+}
 .teoria__links {
     text-align: left;
     color: #18479e;
     position: relative;
     z-index: 100;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 25px;
 }
 .teoria__links:hover {
     text-decoration: underline;
+}
+.arrow-6 {
+    margin:20px;
+    display: block;
+    text-align: center;
+}
+.arrow-6__link {
+}
+.arrow-6 svg {
+    width: 100px;
+    height: auto;
+    margin: 0 2rem;
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow-6 svg polygon, 
+.arrow-6 svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #337AB7;
+}
+.arrow-6 svg:hover polygon, 
+.arrow-6 svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #000;
+}
+.arrow-6 svg:hover .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+ 
+@keyframes arrow-6-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-0.1rem);
+    }
+    100% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+}
+@keyframes arrow-6-fixed-anim {
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 /* ---------------------PRACTIC---------------------- */
 .practic__title-logo {
@@ -472,7 +531,7 @@ h1 {
     text-align: center;
     color: #133676;
     font-size: 42px;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     bottom: 200px;
     left: 0;
@@ -481,7 +540,7 @@ h1 {
     padding: 0 20px;
     color: #133676;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
     line-height: 1.6;
 }
