@@ -11,40 +11,42 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__container _container">
+            <div class="header__container">
                 <div class="page1__image">
-                    <a href="teorya6.html"><img src="assets/img/logo.png" alt="#"></a>
+                    <a href="page2.html"><img src="assets/img/logo.png" alt="#"></a>
                 </div>
             </div>
         </header>
         <main class="main__teoria">
             <section class="teoria__container">
                 <div class="teoria__title-logo">
-                     Графы. Общие сведения.
-                 </div>
-                    
-                    <div class="teoria__main-title main-title">
-                        <h2 class="main-title__title" data-numb="2">Понятия  инцидентности, смежности и степени.</h2>
-                    </div>
-                    <div class="teoria__title">
-                    <div class="teoria__title-textss">
-                    Если v и w – вершины, а x = (v,w) – соединяющее их ребро, то вершина v и ребро x инцидентны, как и вершина w и ребро x.
-                     x = (v,w)  vx   wx.
-                    </div>
-                    <div class="teoria__title-textss">
-                    Вершины v, w называются смежными, если они инцидентны одному и тому же ребру.
-                     (v,w)x.
-                    </div>
-                    <div class="teoria__title-textss">
-                        Ребра называются смежными, если они имеют общую вершину.
-                     Множество вершин, смежных с вершиной v, называется множеством смежности вершины v и обозначается Г(v).
-                     Степенью вершины v графа G называется число ребер (v) графа G, инцидентных вершине v.
-                    </div>
-                     Например, на рис.1 вершина v1 имеет степень 1, вершина v2 имеет степень 3, вершина v3 имеет степень 2, вершина v4 имеет степень 2, вершина v5 имеет степень 0.
-                     Вершина графа, имеющая степень 0 (не инцидентная ни одному из ребер) называется изолированной, а степень 1 (инцидентная одному ребру) – висячей.
-                    </div>
-                    <div class="arrow-6">
-                        <a href="teorya1.html" class="arrow-6__link">
+                     Три вида представления <br> логической функции.
+                  </div>
+                      <div class="teoria__main-title main-title">
+                        <h2 class="main-title__title" data-numb="2">Переход от логической схемы к логической формуле.</h2>
+                      </div>
+                      <div class="teoria__title">
+                        Переход от логической схемы к логической формуле осуществляется по следующим правилам: <br>
+                      1. На схему смотрим справа налево. <br>
+                      2. Заменяем самый правый элемент на ту функцию, которая стоит внутри элемента (если 1, то дизъюнкция, а если &, то конъюнкция). <br>
+                      3. Сколько входов у элемента, столько будет «колбасок». <br>
+                      4. Каждая «колбаска» содержит ту функцию, которая внутри элемента. <br>
+                      5. Не забыть расставить инверсии.
+                      <div class="teoria__image">
+                          <img src="assets/img/img111.png" alt="#">
+                      </div>
+                      F=(X1&X2) ̅V (X2) ̅&(X3) ̅
+                      <div class="teoria__image">
+                          <img src="assets/img/img112.png" alt="#">
+                      </div>
+                      F=(X1) ̅&X2VX2VX1&(X2) ̅
+                      <div class="teoria__image">
+                          <img src="assets/img/img113.png" alt="#">
+                      </div>
+                      F=((X1) ̅&(X2) ̅  V(X1&(X2) ̅ ) ̅  &(X1VX2) ̅ ) <br>
+                      </div>
+                      <div class="arrow-6">
+                        <a href="teorya2.html" class="arrow-6__link">
                            <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
                                    <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
@@ -53,7 +55,7 @@
                                </g>
                            </svg>
                         </a>
-                       <a href="teorya33.html" class="arrow-6__link">
+                       <a href="teorya166.html" class="arrow-6__link">
                            <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                <g>
                                    <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
@@ -63,4 +65,3 @@
                            </svg>
                        </a>       
                    </div>
-                     
