@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Графы. Общие сведения.</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                  <a href="../pages/pagetheory.html"><img src="../assets/img/img95.png" alt="#"></a>
+                </div>
+                <div class="header__title">
+                    <h1>Графы. Общие сведения.</h1> 
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__content content">
+                <div class="content__container">
+                    <div class="content__menu menu">
+                        <h3 class="menu__title">Оглавление
+                            <button class="menu-btn" id="menuButton">
+                                <span class="burger-icon"></span>
+                            </button>
+                        </h3>
+                        <nav class="menu__nav">
+                            <ol class="menu__list is-noactive">
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya6.html">Основные определения и понятия</a>.</li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya11.html">Понятия  инцидентности, смежности и степени.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya33.html">Маршруты, цепи и циклы.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya44.html">Частные случаи. Связность внутри графа и расстояние</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya55.html">Матрица инцидентности</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya66.html">Матрица смежности</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="content__block block-content">
+                        <div class="block-content__title_circle">
+                            <h2 data-numb="4">Частные случаи. Связность внутри графа и расстояние</h2>
+                        </div>
+                        <div class="block-content__rubric">
+                            <div class="block-content__title">Существуют частные случаи цепей и циклов:</div>
+                            <ul class="block-content__list">
+                                <li class="block-content__item">Гамильтонова цепь (цикл) − простая цепь (цикл), проходящая через все вершины;</li>
+                                <li class="block-content__item">Эйлерова цепь (цикл) − цепь (цикл), содержащая все ребра графа по одному разу.</li>
+                            </ul>
+                        </div>
+                        <div class="block-content__rubric">
+                            <div class="block-content__title">Для Эйлеровой цепи и цикла существуют 2 утверждения:</div>
+                            <ul class="block-content__list">
+                                <li class="block-content__item">Утверждение 1. Для того чтобы связный псевдограф G обладал Эйлеровым циклом, необходимо и достаточно, чтобы степени всех его вершин были четными;</li>
+                                <li class="block-content__item">Утверждение 2. Для того чтобы связный псевдограф G обладал Эйлеровой цепью, необходимо и достаточно, чтобы он имел ровно 2 вершины нечетной степени.</li>
+                            </ul>
+                        </div>
+                        <p class="block-content__text">
+                            Длина маршрута  − число ребер в маршруте.
+                 Расстоянием между вершинами v и w  (d(v,w)) называется длина кратчайшей цепи v,w.
+                 Также говорят о связности графа – две вершины графа связаны, если существует соединяющая их цепь. Граф, в котором все вершины связаны – называются связным. 
+                        </p>
+                     </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__arrows arrows">
+                    <a href="../theory/teorya33.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                    </a>
+                   <a href="../theory/teorya55.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g>
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                   </a>       
+               </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="../assets/js/app.js"></script>
+</html>

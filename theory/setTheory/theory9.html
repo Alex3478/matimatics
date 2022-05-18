@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теория множеств. Основные понятия теории множеств.</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                  <a href="../pages/pagetheory.html"><img src="../../assets/img/img95.png" alt="#"></a>
+                </div>
+                <div class="header__title">
+                    <h1>Теория множеств. Основные понятия теории множеств.</h1> 
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__content content">
+                <div class="content__container">
+                    <div class="content__menu menu">
+                        <h3 class="menu__title">Оглавление
+                            <button class="menu-btn" id="menuButton">
+                                <span class="burger-icon"></span>
+                            </button>
+                        </h3>
+                        <nav class="menu__nav">
+                            <ol class="menu__list is-noactive">
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya1.html">Дизъюнкция</a>.</li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya10.html">Конъюнкция.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya9.html">Инверсия.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya45.html">Стрелка Пирса.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya122.html">Штрих Шеффера.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya133.html">Сложение по модулю 2.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya77.html">Эквивалентность.</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="content__block block-content">
+                        <div class="block-content__title_circle">
+                            <h2 data-numb="2">Операции над множествами</h2>
+                        </div>
+                        <h3 class="block-content__title">
+                            Операции над множествами:
+                        </h3>
+                        <ol class="block-content__list block-content__list_number">
+                            <li class="block-content__item">Объединение АВ.
+                                <div class="block-content__card card-block">
+                                    <div class="card-block__wrapper">
+                                        <p class="card-block__text">Объединением двух множеств А и В называется множество С, состоящее из всех элементов, принадлежащих хотя бы одному из множеств А или В.</p>
+                                        <div class="card-block__image">
+                                            <img src="../assets/img/img31.png" alt="#">
+                                        </div>
+                                        <p class="card-block__text">АВ:= {Х | XAVXB} Объединение похоже на дизъюнкцию. Пример:</p>
+                                        <ul class="block-content__list">
+                                            <li class="block-content__item">А:= {0,1,2,3}</li>
+                                            <li class="block-content__item">В:= {2,3,4}</li>
+                                            <li class="block-content__item">АВ:={0,1,2,3,4}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block-content__item">Пересечение АВ.
+                                <div class="block-content__card card-block">
+                                    <div class="card-block__wrapper">
+                                        <p class="card-block__text">Пересечением двух множеств А и В называется множество С, состоящее из элементов, принадлежащих как множеству А так и множеству В.</p>
+                                        <div class="card-block__image">
+                                            <img src="../assets/img/img32.png" alt="#">
+                                        </div>
+                                        <p class="card-block__text">АВ:= {Х | XA&XB} Пересечение похоже на конъюнкцию. Пример:</p>
+                                        <ul class="block-content__list">
+                                            <li class="block-content__item">А:= {0,1,2,3}</li>
+                                            <li class="block-content__item">В:= {2,3,4}</li>
+                                            <li class="block-content__item">АВ:= {2,3}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="block-content__item">Разность А\В
+                                <div class="block-content__card card-block">
+                                    <div class="card-block__wrapper">
+                                        <p class="card-block__text">Разностью двух множеств А и В называется множество С, состоящее из элементов, принадлежащих А, но не принадлежащих множеству В.</p>
+                                        <div class="card-block__image">
+                                            <img src="../assets/img/img33.png" alt="#">
+                                        </div>
+                                        <p class="card-block__text">А\В:= {Х | XA&XB}. Пример:</p>
+                                        <ul class="block-content__list">
+                                            <li class="block-content__item">А:= {0,1,2,3}</li>
+                                            <li class="block-content__item">В:= {2,3,4}</li>
+                                            <li class="block-content__item">А\В:= {0,1}</li>
+                                        </ul>
+                                        <div class="card-block__image">
+                                            <img src="../assets/img/img34.png" alt="#">
+                                        </div>
+                                        <p class="card-block__text">B\A:= {Х | XA&XB}. Пример:</p>
+                                        <ul class="block-content__list">
+                                            <li class="block-content__item">А:= {0,1,2,3}</li>
+                                            <li class="block-content__item">В:= {2,3,4}</li>
+                                            <li class="block-content__item">B\A:= {4}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="block-content__title">Дополнение А</div>
+                        <div class="block-content__card card-block">
+                            <div class="card-block__wrapper">
+                                <p class="card-block__text">Дополнением множества А называется множество, состоящее из элементов, не принадлежащих А.</p>
+                                <div class="card-block__image">
+                                    <img src="../assets/img/img35.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="block-content__text">
+                            А ̅:= { Х | XA} <br>
+                        А ̅:= { 0,1,2,3} <br>
+                        B ̅:= { 2,3,4} <br>
+                        А ̅:= {-…,-1, 4…+} <br>
+                        В ̅:= { Х | XВ} <br>
+                        В ̅:= {-…, 1, 5…+} <br>
+                        Пример: <br>
+                        1. Найти объединение, пересечение, две разности и два дополнения следующих множеств. <br>
+                        А:= {1,2,4,5,7,8} <br>
+                        В:= {2,4,6,8,10} <br>
+                        АВ:={1,2,4,5,6,7,8,10} <br>
+                        АВ:= {2,4,8} <br>
+                        А\В:= {1,5,7} <br>
+                        B\A:= {6,10} <br>
+                        А ̅:= {-…0,3,6,9…+} <br>
+                        В ̅:= {-…1,3,5,7,9,11…+} <br>
+                        2. Найти объединение, пересечение, две разности и два дополнения следующих множеств. <br>
+                        А:= {-2,4,12,20} <br>
+                        В:= {0,7,11,17} <br>
+                        АВ:={-2,0,4,7,11,12,17,20} <br>
+                        АВ:=  <br>
+                        А\В:= {-2,4,12,20} <br>
+                        B\A:= {0,7,11,17} <br>
+                        А ̅:= {-…-3,-1,0,1,2,3,5,6,7,8,9,10,11,13,14,15,16,17,18,19,21…+} <br>
+                        В ̅:= {-…-1,1,2,3,4,5,6,8,9,10,12,13,14,15,16,18…+} <br>
+                        3. Найти объединение, пересечение, две разности и два дополнения следующих множеств. <br>
+                        А:= {а,б,в,г,д} <br>
+                        В:= {а,г,с,т,у} <br>
+                        АВ:={а,б,в,г,д,с,т,у} <br>
+                        АВ:= {а,г} <br>
+                        А\В:= {б,в,д} <br>
+                        B\A:= {с,т,у} <br>
+                        А ̅:= {е,ё,…я} <br>
+                        В ̅:= {б,в,д,…р,ф,…я} <br>
+                        4. Найти объединение, пересечение, две разности и два дополнения следующих множеств <br>
+                        Множество А:= {р,о,м,а,н} <br>
+                        В:= {ь,ы,ъ,э,ю,я} <br>
+                        АВ:={р,о,м,а,н,ь,ы,ъ,э,ю,я} <br>
+                        АВ:=  <br>
+                        А\В:= {р,о,м,а,н} <br>
+                        B\A:= {ь,ы,ъ,э,ю,я} <br>
+                        А ̅:= {б,…л,п,с…я} <br>
+                        В ̅:= {а,…щ} <br>
+                        5. Найти объединение, пересечение, две разности и два дополнения следующих множеств <br>
+                        А:= {1,б,4,г,8,с,12,ю} <br>
+                        В:= {1,2,3,4,ж,и,к,г} <br>
+                        АВ:={1,2,3,4,8,12,б,с,ю,ж,и,к,г} <br>
+                        АВ:= {1,4}  <br>
+                        А\В:= {б,8,с,12,ю} <br>
+                        B\A:= {2,3,ж,и,к} <br>
+                        А ̅:= {-…0,2,3,5,6,7,9,10,11,13…+,а,в,д,…р,т…э,я} <br>
+                        В ̅:= {-…0,5,…+,а,б,в,д,е,ё,з,й,л…я} 
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__arrows arrows">
+                    <a href="../theory/teorya5.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                    </a>
+                   <a href="../theory/teorya188.html    " class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g>
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                   </a>       
+               </div>
+            </div>
+        </footer>
+    </div> 
+</body>
+<script src="../assets/js/app.js"></script>
+</html>      

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Три вида представления логической функции</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                  <a href="../../pages/pagetheory.html"><img src="../../assets/img/img95.png" alt="#"></a>
+                </div>
+                <div class="header__title">
+                    <h1>Три вида представления логической функции</h1> 
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__content content">
+                <div class="content__container">
+                    <div class="content__menu menu">
+                        <h3 class="menu__title">Оглавление
+                            <button class="menu-btn" id="menuButton">
+                                <span class="burger-icon"></span>
+                            </button>
+                        </h3>
+                        <nav class="menu__nav">
+                            <ol class="menu__list is-noactive">
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya2.html">Переход от логической формулы к логической схеме.</a>.</li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya155.html">Переход от логической схемы к логической формуле.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya166.html">Переход от логической формулы к таблице истинности.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya177.html">Переход от таблицы истинности к логической формуле.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya188.html">Тождественность функций.</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="content__block block-content">
+                        <div class="block-content__title_circle">
+                            <h2 data-numb="5">Тождественность функций</h2>
+                        </div>
+
+                        <div class="block-content__table-true">
+                            <div class="table-true__title">
+                                Таблица 1 - Истинность и тд прочее
+                            </div>
+                            <div class="table-true">
+                                <div class="table-true__wrapper">
+                                    <table class="table-true__table">
+                                        <tr>
+                                            <th>X1</th>
+                                            <th>X2</th>
+                                            <th>X3</th>
+                                            <th>F1</th>
+                                            <th>F2</th>
+                                            <th>F3</th>
+                                            <th>F4</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                            <td>0</td>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1V</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                            <td>1V</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="block-content__rubric">
+                            <div class="block-content__title">Две функции являются тождественными, если их таблица истинности совпадают. Сравнить две функции на тождественность.</div>
+                            <ul class="block-content__list">
+                                <li class="block-content__item">F1=(X1) ̅&(X2) ̅&(X3) ̅V(X1) ̅&(X2) ̅&X3;</li>
+                                <li class="block-content__item">F2=(X1) ̅&(X2);</li>
+                                <li class="block-content__item">F1=0 ̅&0 ̅&0 ̅V0 ̅&0 ̅&0=1V0=1;</li>
+                                <li class="block-content__item">F2=0 ̅&0 ̅=1&1=1;</li>
+                                <li class="block-content__item">F1=0 ̅&0 ̅&1 ̅V0 ̅&0 ̅&1=0V1=1;</li>
+                                <li class="block-content__item">F2=0 ̅&0 ̅=1&1=1;</li>
+                                <li class="block-content__item">F1=0 ̅&1 ̅&0 ̅V0 ̅&1 ̅&0=0V0=0;</li>
+                                <li class="block-content__item">F2=0 ̅&1 ̅=1&0=0;</li>
+                                <li class="block-content__item">F1=0 ̅&1 ̅&1 ̅V0 ̅&1 ̅&1=0V0=0;</li>
+                                <li class="block-content__item">F2=0 ̅&1 ̅=1&0=0;</li>
+                                <li class="block-content__item">F1=1 ̅&0 ̅&0 ̅V1 ̅&0 ̅&0=0V0=0;</li>
+                                <li class="block-content__item">F2=1 ̅&0 ̅=0&1=0;</li>
+                                <li class="block-content__item">F1=1 ̅&0 ̅&1 ̅V1 ̅&0 ̅&1=0V0=0;</li>
+                                <li class="block-content__item">F2=1 ̅&0 ̅=0&1=0;</li>
+                                <li class="block-content__item">F1=1 ̅&1 ̅&0 ̅V1 ̅&1 ̅&0=0V0=0;</li>
+                                <li class="block-content__item">F2=1 ̅&1 ̅=0&0=0;</li>
+                                <li class="block-content__item">F1=1 ̅&1 ̅&1 ̅V1 ̅&1 ̅&1=0V0=0;</li>
+                                <li class="block-content__item">F2=1 ̅&1 ̅=0&0=0.</li>
+                            </ul>
+                        </div>
+                        <div class="block-content__table-true">
+                            <div class="table-true__title">
+                                Таблица 1 - Истинность и тд прочее
+                            </div>
+                            <div class="table-true">
+                                <div class="table-true__wrapper">
+                                    <table class="table-true__table">
+                                        <tr>
+                                            <th>X1</th>
+                                            <th>X2</th>
+                                            <th>X3</th>
+                                            <th>F1</th>
+                                            <th>F2</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="block-content__rubric">
+                            <div class="block-content__title">Так как таблицы истинности совпали, то функции F1 и F2 тождественны.
+                                Сравнить две функции на тождественность.</div>
+                            <ul class="block-content__list">
+                                <li class="block-content__item">F3=(X1) ̅&X2V(X2) ̅&X3V(X3) ̅&X1</li>
+                                <li class="block-content__item">F4=(X1) ̅&X2&(X3) ̅V(X1) ̅&X2&X3V(X2)</li>
+                                <li class="block-content__item">F3=0 ̅&0V0 ̅&0V0 ̅&0=0V0V0=0</li>
+                                <li class="block-content__item">F4=0 ̅&0&0 ̅V0 ̅&0&0V0 ̅=0V0V1=1</li>
+                                <li class="block-content__item">F3=0 ̅&0V0 ̅&1V1 ̅&0=0V1V0=1</li>
+                                <li class="block-content__item">F4=0 ̅&0&1 ̅V0 ̅&0&1V0 ̅=0V0V1=1</li>
+                                <li class="block-content__item">F3=0 ̅&1V1 ̅&0V0 ̅&0=1V0V0=1</li>
+                                <li class="block-content__item">F4=0 ̅&1&1 ̅V0 ̅&1&1V1 ̅=0V1V0=1</li>
+                                <li class="block-content__item">F3=0 ̅&1V1 ̅&1V1 ̅&0=1V0V0=1</li>
+                                <li class="block-content__item">F4=1 ̅&0&0 ̅V1 ̅&0&0V0 ̅=0V0V1=1</li>
+                                <li class="block-content__item">F3=1 ̅&0V0 ̅&0V0 ̅&1=0V0V1=1</li>
+                                <li class="block-content__item">F4=1 ̅&0&0 ̅V1 ̅&0&0V0 ̅=0V0V1=1</li>
+                                <li class="block-content__item">F3=1 ̅&0V0 ̅&1V1 ̅&1=0V1V0=1</li>
+                                <li class="block-content__item">F4=1 ̅&0&1 ̅V1 ̅&0&1V0 ̅=0V0V1=1</li>
+                                <li class="block-content__item">F3=1 ̅&1V1 ̅&0V0 ̅&1=0V0V1=1</li>
+                                <li class="block-content__item">F4=1 ̅&1&0 ̅V1 ̅&1&0V1 ̅=0V0V0=0</li>
+                                <li class="block-content__item">F3=1 ̅&1V1 ̅&1V1 ̅&1=0V0V0=0</li>
+                                <li class="block-content__item">F4=1 ̅&1&1 ̅V1 ̅&1&1V1 ̅=0</li>
+                            </ul>
+                        </div>
+                        <div class="block-content__table-true">
+                            <div class="table-true__title">
+                                Таблица 1 - Истинность и тд прочее
+                            </div>
+                            <div class="table-true">
+                                <div class="table-true__wrapper">
+                                    <table class="table-true__table">
+                                        <tr>
+                                            <th>X1</th>
+                                            <th>X2</th>
+                                            <th>X3</th>
+                                            <th>F3</th>
+                                            <th>F4</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>1</td>
+                                        </tr>
+                                        <tr>
+                                          <td>0</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>1</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__arrows arrows">
+                    <a href="../theory/teorya177.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                    </a>
+                   <a href="../theory/theory10.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g>
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                   </a>       
+               </div>
+            </div>
+        </footer>
+    </div> 
+</body>
+<script src="../assets/js/app.js"></script>
+</html>      

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формулы и законы алгебры логики</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                  <a href="../pages/pagetheory.html"><img src="../assets/img/img95.png" alt="#"></a>
+                </div>
+                <div class="header__title">
+                    <h1>Формулы и законы алгебры логики</h1> 
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__content content">
+                <div class="content__container">
+                    <div class="content__menu menu">
+                        <h3 class="menu__title">Оглавление
+                            <button class="menu-btn" id="menuButton">
+                                <span class="burger-icon"></span>
+                            </button>
+                        </h3>
+                        <nav class="menu__nav">
+                            <ol class="menu__list is-noactive">
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya1.html">Дизъюнкция</a>.</li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya10.html">Конъюнкция.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya9.html">Инверсия.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya45.html">Стрелка Пирса.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya122.html">Штрих Шеффера.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya133.html">Сложение по модулю 2.</a></li>
+                                <li class="menu__item"><a class="menu__link" href="../theory/teorya77.html">Эквивалентность.</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="content__block block-content">
+                        <div class="block-content__title_circle">
+                            <h2 data-numb="1">Формулы и законы алгебры логики</h2>
+                        </div>
+                        <div class="block-content__text">Так как таблицы истинности не совпали, то функции F3 и F4  не тождественны
+                            Эти формулы и законы предназначены для минимизации логических формул.
+                        </div>
+                        <div class="block-content__rubric">
+                            <div class="block-content__title">
+                                Формулы:
+                            </div>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-contnet__item"> Переместительный закон:
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">X1VX2=X2VX1</li>
+                                        <li class="block-content__item">X1&X2=X2&X1</li>
+                                    </ul>
+                                </li>
+                                <li class="block-contnet__item">Сочетательный закон:  
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">X1V(X2VX3)=(X1VX2)VX3  </li>
+                                        <li class="block-content__item">X1&(X2&X3)=(X1&X2)&X3  </li>
+                                    </ul>
+                                </li>
+                                <li class="block-contnet__item">Распределительный закон:  
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">(X1VX2)&X3=(X1&X3)V(X2&X3)</li>
+                                        <li class="block-content__item">(X1&X2)VX3=(X1VX3)&(X2VX3)</li>
+                                    </ul>
+                                </li>
+                                <li class="block-contnet__item">Закон инверсии:  
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">(X1VX2) ̅=(X1) ̅&(X2)  </li>
+                                        <li class="block-content__item">(X1&X2) ̅=(X1) ̅V(X2)  </li>
+                                    </ul>
+                                </li>
+                                <li class="block-contnet__item">Соотношения:  
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">X1 ⊕X2=(X1~X2) ̅= ((X1) ̅V(X2) ̅)&(X1VX2)</li>
+                                        <li class="block-content__item">X1 ~X2=(X1⊕X2) ̅=((X1) ̅&(X2) ̅)V(X1VX2)</li>
+                                    </ul>
+                                </li>
+                                <li class="block-contnet__item">Формулы склеивания:
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">X1&X2VX1&(X2) ̅=X1</li>
+                                        <li class="block-content__item">(X1VX2)&(X1V(X2) ̅)=X1</li>
+                                    </ul>
+                                </li>
+                                <li class="block-contnet__item">Формулы поглощения:
+                                    <ul class="block-content__list">
+                                        <li class="block-content__item">X1&X2VX1=X1	(X1) ̅&X2VX1=X1VX2  </li>
+                                        <li class="block-content__item">X1&(X2VX1)=X1	X1&(X2V(X1) ̅)=X1&X2  </li>
+                                        <li class="block-content__item">X&X=X                        X&X&X=X	X&X ̅=0  </li>
+                                        <li class="block-content__item">X&X=X                        XVXVX=X	XVX ̅=1  </li>
+                                        <li class="block-content__item">X&0=0                               X ̿=X	XV0=X  </li>
+                                        <li class="block-content__item">X&1=X	XV1=1</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="block-content__text">
+                            F1=X1&X2&X3VX1&X3VX1&X2=X1&(X2&X3VX3)VX1&X2=X1&X3VX1&X2=X1&(X3VX2)
+                            Чтобы проверить правильность минимизации необходимо составить таблицу истинности для исходной формулы и конечной.
+                        </p>
+                        <div class="block-content__table-true">
+                            <div class="table-true__title">
+                                Таблица 1 - Истинность и тд прочее
+                            </div>
+                            <div class="table-true">
+                                <div class="table-true__wrapper">
+                                    <table class="table-true__table">
+                                        <tr>
+                                            <td>X<sub>1</sub></td>
+                                            <td>X<sub>2</sub></td>
+                                            <td>F<sub>н</sub></td>
+                                            <td>F<sub>к</sub></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p class="table-true__text">
+                                    Если таблицы истинности совпали, то минимизация выполнена верно.
+                                    Fнач=0&0&0V0&0V0&0=0V0V0=0	Fкон=0&0V0=0  
+                                    Fнач=0&0&1V0&1V0&0=0V0V0=0	Fкон=0&1V0=0  
+                                    Fнач=0&1&0V0&0V0&1=0V0V0=0	Fкон=0&0V1=0  
+                                    Fнач=0&1&1V0&1V0&1=0V0V0=0	Fкон=0&1V1=0  
+                                    Fнач=1&0&0V1&0V1&0=0V0V0=0	Fкон=1&0V0=0  
+                                    Fнач=1&0&1V1&1V1&0=0V1V0=1	Fкон=1&1V0=1  
+                                    Fнач=1&1&0V1&0V1&1=0V0V1=1	Fкон=1&0V1=1  
+                                    Fнач=1&1&1V1&1V1&1=1V1V1=1	Fкон=1&1V1=1  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-content__card card-block">
+                            <div class="card-block__wrapper">
+                                <p class="card-block__text">Так как таблицы истинности совпали, то минимизация верна. F1=X1&X2&X3VX1&X3VX1&X2</p>
+                                <div class="card-block__image">
+                                    <img src="../assets/img/img222.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content__card card-block">
+                            <div class="card-block__wrapper">
+                                <p class="card-block__text">Минимизация целесообразна, так как начальная логическая схема больше конечной логической схемы.  
+                                    F2=((X1) ̅&(X2) ̅ ) ̅VX1&X3=(X1VX2) ̿VX1&X3=X1VX2VX1&X3=X1VX2VX1&X3=X2V(X1&X3VX1) =X2VX1</p>
+                                <div class="card-block__image">
+                                    <img src="../assets/img/img223.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content__card card-block">
+                            <div class="card-block__wrapper">
+                                <p class="card-block__text">Минимизация целесообразна, так как конечная логическая схема меньше начальной логической схемы.
+                                    F3=(((X1) ̅&(X2) ̅ ) ̅VX1&X3VX3) ̿=((X1) ̅&(X2) ̅ ) ̅VX1&X3VX3=(X1VX2) ̿VX1&X3VX3=X1VX2V(X1&X3VX3)=X1VX2VX3</p>
+                                <div class="card-block__image">
+                                    <img src="../assets/img/img224.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content__table-true">
+                            <div class="table-true__title">
+                                Таблица 1 - Истинность и тд прочее
+                            </div>
+                            <div class="table-true">
+                                <div class="table-true__wrapper">
+                                    <table class="table-true__table">
+                                        <tr>
+                                            <td>X<sub>1</sub></td>
+                                            <td>X<sub>2</sub></td>
+                                            <td>F<sub>н</sub></td>
+                                            <td>F<sub>к</sub></td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p class="table-true__text">
+                                    Fнач=((0 ̅&0 ̅ ) ̅V0&0V0) ̿=0  
+                                    F=((0 ̅&0 ̅ ) ̅V0&1V1) ̿=1  
+                                    F=((0 ̅&1 ̅ ) ̅V0&0V0) ̿=1  
+                                    F=((0 ̅&1 ̅ ) ̅V0&1V1) ̿=1  
+                                    F=((1 ̅&0 ̅ ) ̅V1&0V0) ̿=1  
+                                    F=((1 ̅&0 ̅ ) ̅V1&1V1) ̿=1  
+                                    F=((1 ̅&1 ̅ ) ̅V1&0V0) ̿=1  
+                                    F=((1 ̅&1 ̅ ) ̅V1&1V1) ̿=1  
+                                    Fконеч.=0V0V0=0  
+                                    F=0V0V1=1  
+                                    F=0V1V0=1  
+                                    F=0V1V1=1  
+                                    F=1V0V0=1  
+                                    F=1V0V1=1  
+                                    F=1V1V0=1  
+                                    F=1V1V1=1   
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-content__card card-block">
+                            <div class="card-block__wrapper">
+                                <p class="card-block__text"> Минимизация верна, так как таблицы истинности совпали.</p>
+                                <div class="card-block__image">
+                                    <img src="../assets/img/img227.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content__table-true">
+                            <div class="table-true__title">
+                                Таблица 1 - Истинность и тд прочее
+                            </div>
+                            <div class="table-true">
+                                <div class="table-true__wrapper">
+                                    <table class="table-true__table">
+                                        <tr>
+                                            <td>X<sub>1</sub></td>
+                                            <td>X<sub>2</sub></td>
+                                            <td>F</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p class="table-true__text">
+                                    Так как таблицы истинности совпали, то минимизация верна.
+                                    F4=(X1) ̅&(X2) ̅&X3VX1&(X2) ̅&X3VX3=(X2) ̅&X3&((X1) ̅VX1)VX3=(X2) ̅&X3VX3
+                                    F=0 ̅&0 ̅&0V0&0 ̅&0V0=0  
+                                    F=0 ̅&0 ̅&1V0&0 ̅&1V1=1  
+                                    F=0 ̅&1 ̅&0V0&1 ̅&0V0=0  
+                                    F=0 ̅&1 ̅&1V0&1 ̅&1V1=1  
+                                    F=1 ̅&0 ̅&0V1&0 ̅&0V0=0  
+                                    F=1 ̅&0 ̅&1V1&0 ̅&1V1=1  
+                                    F=1 ̅&1 ̅&0V1&1 ̅&0V0=0  
+                                    F=1 ̅&1 ̅&1V1&1 ̅&1V1=1   
+                                    F=0 ̅&0V0=0  
+                                    F=0 ̅&1V1=1  
+                                    F=1 ̅&0V0=0  
+                                    F=1 ̅&1V1=1  
+                                    F=0 ̅&0V0=0  
+                                    F=0 ̅&1V1=1  
+                                    F=1 ̅&0V0=0  
+                                    F=1 ̅&1V1=1  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__arrows arrows">
+                    <a href="../theory/teorya2.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                    </a>
+                   <a href="../theory/teorya11.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g>
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                   </a>       
+               </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="../assets/js/app.js"></script>
+</html>

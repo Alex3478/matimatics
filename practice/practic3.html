@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №3</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                  <a href="../pages/pagepractic.html"><img src="../assets/img/img95.png" alt="#"></a>
+                </div>
+                <div class="header__title">
+                    <h1>Практическая работа №3</h1> 
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__content content">
+                <div class="content__container">
+                    <div class="content__block block-content">
+                        <h3 class="block-content__title">Тема: <span>переход от таблицы истинности к логической формуле.</span></h3>
+                        <h3 class="block-content__title">Дидактическая цель: <span>закрепить теоретические знания по основам математической логики  и  выработать практические навыки по записи логической формулы по таблице истинности: СДНФ и СКНФ.</span></h3>
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">Литература:</h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">Еловенко Н.А. Дискретная математика. Учебное пособие. – Волгоград. ГОУ СПО ВЭТК. 2008. Главы 2, 3.;</li>
+                            </ol>
+                        </div>
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">Ход занятия:</h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">Проверка теоретической подготовки студентов (три булевы операции: обозначение в формуле и на схеме, таблицы истинности, три вида представления логической функции).</li>
+                                <li class="block-content__item">Инструктаж преподавателя о ходе выполнения работы.</li>
+                                <li class="block-content__item">Выполнение работы с использованием методических указаний по вариантам.</li>
+                                <li class="block-content__item">Защита практической работы с ответами на контрольные вопросы (устно).</li>
+                                <li class="block-content__item">Подведение итогов и оценка работы каждого студента.</li>
+                            </ol>
+                        </div>
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">Порядок выполнения работы:</h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">Ознакомиться с примером решения.</li>
+                                <li class="block-content__item">Решить задания, соблюдая порядок оформления примера и оформить отчет (номер, тема и цель практической работы, решение задания по варианту, вывод).</li>
+                                <li class="block-content__item">Подготовить ответы на контрольные вопросы (устно), сделать вывод и предъявить отчет преподавателю.</li>
+                            </ol>
+                        </div>
+                        <h3 class="block-content__title">Примеры решения:</h3>
+
+
+                        <!-- ЧТо это? ИСПРАВИТЬ -->
+        
+                        <div>
+                            1.	Составить СДНФ и СКНФ по таблице истинности для функции. <br>
+                            
+                            2.	Для СДНФ: помечаем строки, где функция истинна (равна 1), сколько единиц - столько слагаемых в СДНФ, каждое слагаемое содержит все аргументы, между которыми стоит амперсанд. <br>
+                            <div class="practic__image">
+                                <img src="../assets/img/img45.png" alt="#">
+                            </div>
+                            
+                            3.	Записываем формулу, если аргумент в данной строке равен нулю, то в соответствующем слагаемом в формуле он записывается с инверсией <br>
+                            F= х1 &х2 &х3 х1 &х2 &х3 х1 &х2 &х3 х1 &х2 &х3 х1 &х2 &х3 х1 &х2 &х3 <br>
+                            4.	Для СКНФ: помечаем строки, где функция ложна (равна 0), сколько нулей - столько сомножителей в СКНФ, каждый сомножитель содержит все аргументы, между которыми стоит логическое сложение. <br>
+                            <div class="practic__image">
+                                <img src="../assets/img/img46.png" alt="#">
+                            </div>
+                            5.	Записываем формулу, если аргумент в данной строке равен единице, то в соответствующем слагаемом в формуле он записывается с инверсией <br>
+                            F= (х1х2х3)&(х1х2х3) <br>
+                            Задание: составить формулы СДНФ и СКНФ по таблице истинности для двух функций <br>
+                            <div class="practic__image">
+                                <img src="../assets/img/img47.png" alt="#">
+                            </div>
+                        </div>
+
+
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">Контрольные вопросы:</h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">Описать процесс перехода из одного вида представления логической функции в другой, описать совершенные формы представления логической функции и процесс их записи.</li>
+                            </ol>
+                        </div>
+                        <button class="block-content__btn button" id="btn-top">На вверх</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="../assets/js/app.js"></script>
+</html>        

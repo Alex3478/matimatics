@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровые автоматы</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                  <a href="../pages/pagetheory.html"><img src="../assets/img/img95.png" alt="#"></a>
+                </div>
+                <div class="header__title">
+                    <h1>Графы. Общие сведения.</h1> 
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__content content">
+                <div class="content__container">              
+                    <div class="content__block block-content">
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">Процесс синтеза логических схем состоит из следующих этапов:</h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">На основе анализа функций, которые должны выполняться устройством, строится таблица истинности;</li>
+                                <li class="block-content__item">По таблице истинности составляется логическая формула;</li>
+                                <li class="block-content__item">Логическая формула минимизируется одним из изученных методов;</li>
+                                <li class="block-content__item">По минимизированной формуле составляется логическая схема из логических устройств( Лучше та, где меньше устройств и они однороднее).</li>
+                            </ol>
+                        </div>
+                        <div class="block-content__card card-block">
+                            <div class="card-block__wrapper">
+                                <p class="card-block__text">Среди логических устройств ЭВМ широко распространены цифровые автоматы.  </p>
+                                <div class="card-block__image">
+                                    <img src="../assets/img/img633.png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="block-content__text">На вход поступает информация в виде набора сигналов x (x1, x2, … xn).
+                            При этом совокупность выходных сигналов F в данный момент времени  t ,определяется входным набором. 
+                            При изменении входного сигнала x изменяется и выходной сигнал F.
+                        </p>
+                        <p class="block-content__text">Таким образом, выходной сигнал комбинационного автомата зависит только от входного сигнала и не зависит от внутреннего состояния, а, следовательно, такой автомат называется автоматом без памяти (примитивный автомат).
+                        </p>
+                        <p class="block-content__text">Логическое устройство, в котором выходной сигнал зависит не только от входного сигнала, но и от внутреннего состояния называется цифровым автоматом с памятью, характеризуется 3 алфавитами:  входным сигналом Х, внутренним состоянием Q , выходной функцией F . 
+                            Функционирование цифрового автомата определяется связями трех алфавитов.
+                        </p>
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">В зависимости от функций переходов (изменение внутреннего состояния) цифровые автоматы 
+                                могут быть трех типов: </h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">
+                                    Синхронный автомат имеет устройство синхронизации (стробирования), которое определяет переход от такта t-1 к t .
+                                    Функция переходов Qt=  (Xt-1, Qt-1).
+                                </li>
+                                <li class="block-content__item">
+                                    Асинхронный автомат: переход от t-1 к t определяется не устройством синхронизации, а изменением входного сигнала.
+                                    Функция переходов: Qt =  (Xt , Qt-1)
+                                </li>
+                                <li class="block-content__item">
+                                    Автономный автомат: функция переходов: Qt =  (Qt-1) – не зависит от входного сигнала вообще.
+                                    Временной интервал называется тактом .
+                                        t-1 -  предыдущий момент времени .
+                                        t – настоящий момент времени .
+                                        t +1 – следующий момент времени.
+                                </li> 
+                            </ol>
+                        </div>
+                        <div class="block-content__rubric">
+                            <h3 class="block-content__title">В зависимости от функций выходов цифровые автоматы могут быть:</h3>
+                            <ol class="block-content__list block-content__list_number">
+                                <li class="block-content__item">
+                                    Автомат Мили: Ft =  (Qt, Xt) – зависит и от входного сигнала и от внутреннего состояния;
+                                </li>
+                                <li class="block-content__item">
+                                    Автомат Мура: Ft =  (Qt) – не зависит от входного сигнала;
+                                </li>
+                                <li class="block-content__item">
+                                    Комбинационный автомат: F =  (X) – изменение выходной функции зависит только от изменения входного сигнала X ,от тактов не зависит, от внутреннего состояния не зависит.
+                                </li> 
+                            </ol>
+                        </div>
+                        <div class="block-content__text"> Все рассматриваемые законы функций используются при анализе работы устройства и при синтезе 
+                            логических устройств.</div>
+                     </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__arrows arrows">
+                    <a href="../theory/teorya5.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                    </a>
+                   <a href="../theory/teorya11.html" class="arrows__link">
+                       <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g>
+                               <polygon class="arrows-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <polygon class="arrows-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                               <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                           </g>
+                       </svg>
+                   </a>       
+               </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="../assets/js/app.js"></script>
+</html>         
